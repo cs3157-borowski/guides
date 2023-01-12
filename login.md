@@ -1,4 +1,4 @@
-# Getting Stated in UNIX Coding Environment
+# Getting Started in UNIX Coding Environment
 
 Welcome to COMSW 3157 Advanced Programming with Dr. Brian Borowski! Prior to this course, you may have used various coding environments like Codio, VSCode, etc. But this guide will introduce you to the one that we use for AP. It is very important that you read through this guide so that you will be able to do the assignments for this course. 
 
@@ -26,8 +26,6 @@ In this course, you will be writing code using a command line text editor on the
 
 Spend the first few days going through the tutorials for your chosen text-editor. For those of you who choose Vim, you can use the built-in tutorial by running `vimtutor` in the command-line. Getting comfortable with your text-editor is very important for this course and will make it a lot easier when assignments become more complex, so practice early! 
 
-## Setting up Git information
-You will use Git to obtain, work on, and collaborate for assignments. 
 
 ### Acknowledgements 
 This guide was originally developed by Jae Woo Lee. 
