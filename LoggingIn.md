@@ -27,7 +27,8 @@ In this course, you will be writing code using a command line text editor on the
 Spend the first few days going through the tutorials for your chosen text-editor. For those of you who choose Vim, you can use the built-in tutorial by running `vimtutor` in the command-line. Getting comfortable with your text-editor is very important for this course and will make it a lot easier when assignments become more complex, so practice early! 
 
 ## Setting up Git information
-You will use Git to obtain, wor on, 
+You will use Git to obtain, work on, and collaborate for assignments. 
+
 ### Acknowledgements 
 This guide was originally developed by Jae Woo Lee. 
 
