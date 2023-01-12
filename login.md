@@ -10,9 +10,9 @@ The command-line in a UNIX coding environment allows you to interact with the op
 ## Logging in to our Class Server 
 Sutdents will recieve an account on the server AP, which is a server instance running on Google Cloud Platform. Think of this as signing onto a remote server where you will do all your work instead of working on and saving files to your local machine. You will access the class server using SSH, which allows a secure terminal session with our class server.
 
-For those of you using macOS, we recommend using its Terminal.
+For those of you using macOS, we recommend using its [Terminal](https://support.apple.com/guide/terminal/welcome/mac).
 
-On Windows, we recommend using cygwin, PuTTY, MobaX, just to name a few.
+On Windows, we recommend using [cygwin](https://www.cygwin.com/), [PuTTY](https://www.putty.org/), [MobaX](https://mobaxterm.mobatek.net/), just to name a few.
 
 Type this into the command-line to establish your connection to our server: 
 
