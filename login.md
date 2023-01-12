@@ -10,9 +10,9 @@ The command-line in a UNIX coding environment allows you to interact with the op
 ## Logging in to our Class Server 
 Sutdents will recieve an account on the server AP, which is a server instance running on Google Cloud Platform. Think of this as signing onto a remote server where you will do all your work instead of working on and saving files to your local machine. You will access the class server using SSH, which allows a secure terminal session with our class server.
 
-For those of you using macOS, we reccomend using its Terminal
+For those of you using macOS, we recommend using its Terminal.
 
-On Windows, we reccomend using cygwin, PuTTY, MobaX, just to name a few
+On Windows, we recommend using cygwin, PuTTY, MobaX, just to name a few.
 
 Type this into the command-line to establish your connection to our server: 
 
@@ -22,7 +22,7 @@ ssh YOUR_UNI@ap.cs.columbia.edu
 You should be prompted to input your password which you should have recieved in an email. Note, it might seem like you are typing in nothing when typing in your password. 
 
 ## Writing Code with a Text Editor
-In this course, you will be writing code using a command line text editor on the class server. In previous semesters, most students and professors reccomend Vim. But you can do your own research and use any text-editor that you feel comfortable with. 
+In this course, you will be writing code using a command line text editor on the class server. In previous semesters, most students and professors recommend Vim. But you can do your own research and use any text-editor that you feel comfortable with (for example, Emacs). 
 
 Spend the first few days going through the tutorials for your chosen text-editor. For those of you who choose Vim, you can use the built-in tutorial by running `vimtutor` in the command-line. Getting comfortable with your text-editor is very important for this course and will make it a lot easier when assignments become more complex, so practice early! 
 
