@@ -8,7 +8,7 @@ You will be interacting with the UNIX coding environment via the command-line.
 The command-line in a UNIX coding environment allows you to interact with the operating system and execute commands. From the command line, you can navigate file systems, run programs, amongst other things. Think of this as a very simplified way of interacting with an operating system or an alternative to a mouse/trackpad. 
 
 ## Logging in to our Class Server 
-Students will recieve an account on the class server named, AP, which is a server instance running on Google Cloud Platform. Your account allows you access to a remote server where you will do all your work and save all your files. 
+Students will receive an account on the AP class server, which is an Ubuntu Linux server instance running on Google Cloud Platform. This remote server is where you will do all your work and save all your files. 
 
 For those of you using macOS, we recommend using its [Terminal](https://support.apple.com/guide/terminal/welcome/mac). If you are using a Windows machine , we recommend using [cygwin](https://www.cygwin.com/), [PuTTY](https://www.putty.org/), [MobaX](https://mobaxterm.mobatek.net/), just to name a few. 
 
