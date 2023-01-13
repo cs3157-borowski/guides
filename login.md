@@ -5,14 +5,14 @@ Welcome to COMSW 3157 Advanced Programming with Dr. Brian Borowski! Prior to thi
 You will be interacting with the UNIX coding environment via the command-line. 
 
 ## What is the "Command-Line"?
-The command-line in a UNIX coding environment allows you to interact with the operating system and execute commands. From the command line, you can navigate file systems, run programs, amongst other things. Think of this as a very simplified way of interacting with an operating system or an alternative to a mouse/trackpad. 
+The command-line in a UNIX coding environment allows you to interact with the operating system and execute commands. From the command line, you can navigate file systems, run programs, amongst other things. Think of this as a very basic way of interacting with an operating system and an alternative to a mouse/trackpad. 
 
 ## Logging in to our Class Server 
 Students will receive an account on the AP class server, which is an Ubuntu Linux server instance running on Google Cloud Platform. This remote server is where you will do all your work and save all your files. 
 
 For those of you using macOS, we recommend using its [Terminal](https://support.apple.com/guide/terminal/welcome/mac). If you are using a Windows machine , we recommend using [cygwin](https://www.cygwin.com/), [PuTTY](https://www.putty.org/), [MobaX](https://mobaxterm.mobatek.net/), just to name a few. 
 
-Now, to log onto our remote class server, you will need to establish use SSH (Secure SHell).Type this into the command-line to establish your connection to our server: 
+Now, to log into our remote class server, you will need to use the SSH (Secure SHell) command. Type this into the command-line to establish your connection to our server: 
 
 ```yaml
 ssh YOUR_UNI@ap.cs.columbia.edu
