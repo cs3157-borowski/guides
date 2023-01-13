@@ -44,6 +44,6 @@ Spend the first few days going through the tutorials for your chosen text-editor
 ### Acknowledgements 
 This guide was originally developed by Jae Woo Lee. 
 
-Adaptations by Phillip Le for Fall 23
+Adaptations by Phillip Le for Spring 23
 
 _Last Edited 1/12/23_
