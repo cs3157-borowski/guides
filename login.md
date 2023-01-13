@@ -17,7 +17,7 @@ Now, to log onto our remote class server, you will need to establish use SSH (Se
 ```yaml
 ssh YOUR_UNI@ap.cs.columbia.edu
 ```
-You should be prompted to input your password which you should have recieved in an email. Don't worry, it will seem like you are not typing anything but continue and press ENTER when done. If you followed these steps closely, you should see this message appear: 
+You should be prompted to input your password which you should have received via email. Don't worry, it will seem like you are not typing anything, but continue entering your password and press ENTER when done. If you followed these steps closely, you should see this message appear: 
 ```yaml
                   __                             __      
    _      _____  / /________  ____ ___  ___     / /_____ 
