@@ -29,7 +29,7 @@ $ echo $SHELL
 /bin/bash
 ```
 
-When you type a command into your shell you're running a program, much like clicking on an icon to launch a program on a GUI based operating system. We just used the `echo` program. 'echo' prints out the text that you input as command line arguments. For example:
+When you type a command into your shell you're running a program, much like clicking on an icon to launch a program on a GUI based operating system. We just used the `echo` program. `echo` prints out the text that you input as command line arguments. For example:
 
 ```console
 $ echo Hello AP!
