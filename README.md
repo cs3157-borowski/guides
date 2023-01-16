@@ -6,5 +6,5 @@ developed by the TAs for Prof. Brian Borowski's offering of the course.
 
 ## Programming Enviroment
 
-- [Login](login.md): Introduction on how to access the AP server.
-- [Git](git.md): Makefiles.
+- [Login](login.md): Introduction and access to the AP server.
+- [Git](git.md): Introduction to Git.
