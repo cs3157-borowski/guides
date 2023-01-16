@@ -7,4 +7,4 @@ developed by the TAs for Prof. Brian Borowski's offering of the course.
 ## Programming Enviroment
 
 - [Login](login.md): Introduction on how to access the AP server.
-- [Git](B-Makefiles/makefiles.md): Makefiles.
+- [Git](git.md): Makefiles.
