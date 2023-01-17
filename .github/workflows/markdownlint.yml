@@ -1,4 +1,4 @@
-name: Lint Markdown files
+name: Lint Markdown
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint-changelog:
-    name: Lint Markdown files
+    name: Lint Markdown
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
