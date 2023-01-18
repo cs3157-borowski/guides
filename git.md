@@ -515,7 +515,7 @@ solution right in your repository.
 
 ## Learning more about git
 
-This tutorial covers everything you need to do your lab assignments.
+This tutorial covers everything you need to do your homework assignments.
 Git is an extremely powerful tool and a beautifully designed piece of
 software. If you want to learn more about it, start with the official
 git tutorial:
