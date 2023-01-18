@@ -378,12 +378,12 @@ First, you have to "tag" the commit
 you want to hand in before "pushing" it to the remote server.
 When you use git tag <tagname>, Git will create a tag at the current revision
 but will not prompt you for an annotation. It will be tagged without a message.
-When you use git tag -a -m <msg> <tagname>,
+When you use git tag -a <tagname> -m <msg>
 Git will tag the commit and annotate it with the provided message.
 For example, I finish my hw0 and tend to submit
 
 ```bash
-git tag -a -m "hw0 submission" handin
+git tag -a handin -m "hw0 submission"
 ```
 
 Git will tag the commit and annotate it with the provided message
