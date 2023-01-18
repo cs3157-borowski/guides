@@ -213,18 +213,22 @@ or modified and staged. Confused? Let’s try again.
 There are four possibilities for a file in a git-controlled directory:
 
 1. Untracked
+    
     -   Object files and executable files that can be rebuilt are usually not
    tracked.
    
 1. Tracked, unmodified
+    
     -  The file is in the git repository, and it has not been modified
    since the last commit. `git status` says nothing about the file.
 
 1. Tracked, modified, but unstaged
+    
     -  You modified the file, but didn’t `git add` the file. The change
    has not been staged, so it’s not ready for commit yet.
 
 1. Tracked, modified, and staged
+    
     -  You modified the file, and did `git add` the file. The change has
    been moved to the staging area. It is ready for commit.
 
