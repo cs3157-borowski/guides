@@ -472,7 +472,7 @@ To delete a tag on your local repository, you can use git tag -d <tagname>
 git tag -d handin
 ```
 
-It can remove the handin tag just made.
+It can remove the handin tag just made in your local machine.
 
 ## Pushing commits to a remote repository
 
@@ -486,8 +486,14 @@ The `git push` command takes two arguments:
 git push origin main
 ```
 
-will do the job.
+will do the job, and now your submission is on the remote server.
+If you want to re-submit after pushing, you have to delete the 
+old tag in the remote server first:
 
+```bash
+git push --delete origin handin
+```
+and then remove the local handin tag before tagging the new commit for another push.
 
 ## Pulling changes from a remote repository
 
