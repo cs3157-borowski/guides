@@ -109,7 +109,9 @@ line, and then with a more thorough multi-line description.
 
 For now, type in the following one-line commit message, save, and exit
 the editor: `Added hello-world program`
-
+You can also do this in a one-line command with the `-m` flag. `-m`. specifies the commit message without opening a text editor:
+```bash
+git commit -m "Added hello-world program"
 Run `git status` again. It now reports that only `a.out` is untracked.
 It has no mention of `hello.c`. When git says nothing about a file, it
 means that it is being tracked, and that it has not changed since it
