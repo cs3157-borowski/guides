@@ -14,7 +14,7 @@ This tutorial covers not only the basic git operations that you need,
 but also the workflow between you and the TAs -- from our
 preparation of an assignment all the way to the grading of your
 submissions by the TAs. Even if you are already familiar with git,
-you may find the description of the workflow interesting.
+you may find the description of the workflow helpful.
 
 ## Set `EDITOR` environment variable
 
