@@ -215,7 +215,7 @@ There are four possibilities for a file in a git-controlled directory:
 1.  Untracked
 
     - Object files and executable files that can be rebuilt are usually not tracked.
-   
+
 1.  Tracked, unmodified
     - The file is in the git repository, and it has not been modified since the last commit. `git status` says nothing about the file.
 
