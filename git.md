@@ -58,6 +58,7 @@ Put the directory under git revision control:
 ```bash
 git init
 ```
+
 A git repository exists alongside the normal file system. It allows us to track the changes that we make to files, but only in the directory you've initialized it in and subdirectories. This means, for example, that you could create another git repository in `~/tmp/test2`, and the two repositories would have nothing to do with each other.```
 If you type `ll` (I’ll assume that `ll` is an alias for `ls -alF`), you will
 see that there is a `.git` directory. The git repository for the
@@ -110,6 +111,7 @@ line, and then with a more thorough multi-line description.
 For now, type in the following one-line commit message, save, and exit
 the editor: `Added hello-world program`
 You can also do this in a one-line command with the `-m` flag. `-m`. specifies the commit message without opening a text editor:
+
 ```bash
 git commit -m "Added hello-world program"
 Run `git status` again. It now reports that only `a.out` is untracked.
