@@ -24,9 +24,10 @@ the `.bashrc` file in your home directory:
 
 ```bash
 export EDITOR=your_choice_of_editor
+source ~/.bashrc
 ```
 
-Log out and log in again. Type `echo $EDITOR` to make sure that your
+Run source ~/.bashrc to make sure that your
 modification to `.bashrc` has taken effect.
 
 ## Configure your git environment
