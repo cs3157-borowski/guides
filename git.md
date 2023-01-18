@@ -512,7 +512,17 @@ The `git pull` command looks at the original repository that you
 cloned from, fetches all the changes made since the cloning, and
 merges the changes into the current repository. You now have the
 solution right in your repository.
+## Branches
+With group assignments, we recommend that you push work to branches first, and then merge back into main once your group members have reviewed the code. As an example, suppose that you are working on a part of the assignment, you can create a branch separate from main by doing the following:
 
+`$ git checkout main`
+`$ git checkout -b <branch-name>`
+
+You can then commit your changes, and push to the branch by doing the following:
+
+`$ git push origin <branch-name>`
+
+This will allow multiple members of the team to work on separate features in parallel. When the feature you are working on is complete, you may then create a pull request to allow your team members to review the code, and finally merge the changes back into master. You can read more about using branches and pull requests from [GitHub’s own documentation](https://help.github.com/articles/proposing-changes-to-your-work-with-pull-requests/).
 ## Learning more about git
 
 This tutorial covers everything you need to do your homework assignments.
