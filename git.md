@@ -6,9 +6,9 @@ it’s a very useful tool to keep track of the changes you have made to
 your code.
 
 In this class, you are required to use Git for doing your homework
-assignments (we call them labs). You will use Git not only for coding
-your labs, but also for retrieving the skeleton code I provide,
-submitting your code, and downloading solutions.
+assignments. You will use Git not only for coding
+your homeworks, but also for cloning the assignment repos and
+submitting your code
 
 This tutorial covers not only the basic git operations that you need,
 but also the workflow between you, me, and the TAs -- from my
