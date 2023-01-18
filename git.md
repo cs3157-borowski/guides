@@ -511,6 +511,7 @@ The `git pull` command looks at the original repository that you
 cloned from, fetches all the changes made since the cloning, and
 merges the changes into the current repository. You now have the
 solution right in your repository.
+
 ## Branches
 With group assignments, we recommend that you push work to branches first, and then merge back into main once your group members have reviewed the code. As an example, suppose that you are working on a part of the assignment, you can create a branch separate from main by doing the following:
 
