@@ -448,6 +448,47 @@ git commit -m "added solution"
 
 Note that `git add solution` stages all files in the directory.
 
+## Creating tags from the command line
+
+There are two steps to go when submitting your homework in this class.
+First, you have to "tag" the commit
+you want to hand in before "pushing" it to the remote server.
+When you use git tag <tagname>, Git will create a tag at the current revision 
+but will not prompt you for an annotation. It will be tagged without a message.
+When you use git tag -a -m <msg> <tagname>, 
+Git will tag the commit and annotate it with the provided message.
+For example, I finish my hw0 and tend to submit
+
+```bash
+git tag -a -m "hw0 submission" handin
+```
+
+Git will tag the commit and annotate it with the provided message
+with message "hw0 submission" and tag it as "handin".
+    
+To delete a tag on your local repository, you can use git tag -d <tagname>
+
+```bash
+git tag -d handin
+```
+
+It can remove the handin tag just made.
+
+## Pushing commits to a remote repository
+
+Assuming you didn't delete the handin tag, you are ready to push
+your "hw0 submission" to the remote server.
+The `git push` command takes two arguments:
+    A remote name, for example, origin
+    A branch name, for example, main
+
+```bash
+git push origin main
+```
+
+will do the job.
+
+
 ## Pulling changes from a remote repository
 
 Once you hear that the lab solution is available, you will want to
