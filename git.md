@@ -419,8 +419,7 @@ both in test1 and test2.
 
 ## Adding a directory into your repository
 
-After the lab deadline, I will publish the solution by adding a
-"solution" subdirectory to my repository. Let’s simulate that
+After the homework deadline, we will publish the solution by adding a subdirectory to the solution repository. Let’s simulate that
 process. Go into the original test1 directory, and make the solution
 subdirectory and create two files in it:
 
