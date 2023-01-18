@@ -105,7 +105,7 @@ git commit
 Git opens up your editor for you to type a commit message. A commit
 message should succinctly describe what you’re committing in the first
 line. If you have more to say, follow the first line with a blank
-line, and then with a more through multi-line description.
+line, and then with a more thorough multi-line description.
 
 For now, type in the following one-line commit message, save, and exit
 the editor: `Added hello-world program`
@@ -217,17 +217,17 @@ There are four possibilities for a file in a git-controlled directory:
 -   Object files and executable files that can be rebuilt are usually not
    tracked.
 
-1. Tracked, unmodified
+2. Tracked, unmodified
 
 -   The file is in the git repository, and it has not been modified
    since the last commit. `git status` says nothing about the file.
 
-1. Tracked, modified, but unstaged
+3. Tracked, modified, but unstaged
 
 -   You modified the file, but didn’t `git add` the file. The change
    has not been staged, so it’s not ready for commit yet.
 
-1. Tracked, modified, and staged
+4. Tracked, modified, and staged
 
 -   You modified the file, and did `git add` the file. The change has
    been moved to the staging area. It is ready for commit.
@@ -289,7 +289,7 @@ You created a brand new project in the test1 directory, added a file,
 and modified the file. But more often than not, a programmer starts
 with an existing code base. When the code base is under git version
 control, you can \*clone\* the whole repository. This is in fact what
-you will do to start your lab assignments from my skeleton code.
+you will do to start your homework assignments from my skeleton code.
 Let’s move up one directory, clone test1 into test2, and `cd` into the
 test2 directory:
 
