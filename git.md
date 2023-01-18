@@ -498,7 +498,7 @@ and then remove the local handin tag before tagging the new commit for another p
 
 ## Pulling changes from a remote repository
 
-Once you hear that the lab solution is available, you will want to
+Once you hear that the homework solution is available, you will want to
 retrieve it and take a look. You do that by "pulling" the changes in
 my repository into your repository. Let’s pull the changes we just
 made in `test1` into `test2`:
