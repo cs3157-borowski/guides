@@ -26,7 +26,7 @@ the `.bashrc` file in your home directory:
 export EDITOR=your_choice_of_editor
 ```
 
-After saving your '.bashrc' file, run `source ~/.bashrc` 
+After saving your `.bashrc` file, run `source ~/.bashrc` 
 in the command line to make sure that your modification 
 to `.bashrc` has taken effect.
 
