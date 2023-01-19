@@ -24,11 +24,11 @@ the `.bashrc` file in your home directory:
 
 ```bash
 export EDITOR=your_choice_of_editor
-source ~/.bashrc
 ```
 
-Run source ~/.bashrc to make sure that your
-modification to `.bashrc` has taken effect.
+After saving your '.bashrc' file, run `source ~/.bashrc` 
+in the command line to make sure that your modification 
+to `.bashrc` has taken effect.
 
 ## Configure your git environment
 
