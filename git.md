@@ -114,6 +114,7 @@ You can also do this in a one-line command with the `-m` flag. `-m`. specifies t
 
 ```bash
 git commit -m "Added hello-world program"
+```
 Run `git status` again. It now reports that only `a.out` is untracked.
 It has no mention of `hello.c`. When git says nothing about a file, it
 means that it is being tracked, and that it has not changed since it
