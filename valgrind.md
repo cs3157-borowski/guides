@@ -5,7 +5,7 @@
 We use Valgrind to obtain information about two categories of incorrect memory
 management: memory leaks and memory errors.  Memory leaks occur when heap memory
 is not freed, and generally do not cause any kind of misbehavior (unless the
-process runs out of allocatable memory).  Memory errors, in constrast, are a
+process runs out of allocatable memory).  Memory errors, in contrast, are a
 common source of undefined behavior---and are the focus of this guide.
 
 There are four error messages that you should understand:
@@ -23,7 +23,7 @@ An invalid read occurs when you attempt to read a value from a location in
 memory that is not available to the program (e.g. heap memory outside of
 `malloc()`ed blocks and memory which overruns the top of the stack).  The error
 message always includes the number of bytes your program attempted to read,
-which is useful for debugging the error.  On CLAC, a size of 1 indicates a
+which is useful for debugging the error.  On the AP Server, a size of 1 indicates a
 `char`, 4 indicates an `int`, and 8 usually indicates a pointer.
 
 Here's a simple program that will lead to an invalid read of size 4 by reading
