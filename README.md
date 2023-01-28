@@ -9,3 +9,4 @@ developed by the TAs for Prof. Brian Borowski's offering of the course.
 - [Login](login.md): Introduction and access to the AP server.
 - [Git](git.md): Introduction to Git.
 - [Vim](vim-notes.pdf): Vim Guide
+- [Valgrind](valgrind.md): Understanding Valgrind Messages
