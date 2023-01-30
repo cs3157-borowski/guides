@@ -1,4 +1,4 @@
-# Git Tutorial
+# Git 101
 
 Git is a source code version control system. Such a system is most
 useful when you work in a team, but even when you’re working alone,
@@ -11,10 +11,14 @@ your homeworks, but also for cloning the assignment repos and
 submitting your code.
 
 This tutorial covers not only the basic git operations that you need,
-but also the workflow between you and the TAs -- from our
+but also the workflow between you, the TAs, and your partner -- from our
 preparation of an assignment all the way to the grading of your
 submissions by the TAs. Even if you are already familiar with git,
 you may find the description of the workflow helpful.
+
+# Setting Up and Configuring Your Git Environment
+
+Before we are able to begin, make sure you follow the following instructions. 
 
 ## Set `EDITOR` environment variable
 
@@ -41,174 +45,50 @@ git config --global user.email your_uni@columbia/barnard.edu
 
 git stores this information in `~/.gitconfig`
 
-## Creating a project
+# Git Workflow for AP
 
-Let’s create a new directory, `~/tmp/test1`, for our first git project.
+Now that you have configured your Git environment and done the neccessary setup, let's go through how to do the assignments using Git. Before we go on, let's talk about **commits** which are integral to Git's use of workflow management. 
 
-```bash
-cd
-mkdir tmp
-cd tmp
-mkdir test1
-cd test1
-```
+### What is a Git Commit?
+Git commit's are a powerful aspect of Git which makes it a great workflow manager. Think of commits as "snapshots" of your code that you (with the use of git commands) are capturing throughout the various stages of development. Most git commands are oriented around updating and interacting with git commits. Let's move on.
 
-Put the directory under git revision control:
+## Getting Skeleton Code 
 
-```bash
-git init
-```
+Whether you are working as a team or individual, you will be invited to a Git repository, named hw#-team#. This is your repository where you will do all your work. Accessing the repository via github.com, you are accessing the remote repository, and in order for us to work, we have to create a local copy, what we refer to as your **Local Repository**. To do that: 
 
-A git repository exists alongside the normal file system. It allows us to track the changes that we make to files, but only in the directory you've initialized it in and subdirectories. This means, for example, that you could create another git repository in `~/tmp/test2`, and the two repositories would have nothing to do with each other.```
-If you type `ll` (I’ll assume that `ll` is an alias for `ls -alF`), you will
-see that there is a `.git` directory. The git repository for the
-current directory is stashed in the `.git` directory.
+1. Click the green button "Code" and make sure you select SSH, now copy that link. 
+2. In your command-line, run `git clone <paste-link>` 
+ 
+Each group member should do this so that you each have a local copy to work on.At this point, you have cloned your remote repository and have created your local repository. Now, let's go over the local repository structure. 
 
-Let’s start our programming project. Write `hello.c` with your editor:
+### Local Repository Structure 
+Once running the above command, you now have a local copy of your remote repository a.k.a a local repository. What now? Git is a workflow manager that is great for tracking changes that you are making in git tracked files. Git does by structuring your local repository with these three components: 
 
-```c
-#include <stdio.h>
-int main()
-{
-    printf("%s\n", "hello world");
-    return 0;
-}
-```
+1. Working Directory
+2. Staging Area 
+3. HEAD
 
-Compile and run it:
+### Files in your Git Repository
+We will go over what these mean soon, but we have to introduce another aspect to this whole scheme. That is, file status in a directory under git revision control (like your fresh local repository that you cloned). **Files** under git revision control directories can be described in four ways
 
-```bash
-gcc hello.c
-./a.out
-```
+1.  Untracked - A little bit decievingFiles that are not under git revision control, a little bit decievin
+2.  Tracked, unmodified - The file is in the git repository, and it has not been modified since the last commit.
+3.  Tracked, modified, but unstaged - This is a file that is under git revision, you have made changes but have not staged these changes
+4.  Tracked, modified, and staged - This is a file under git revision, you made changes, and staged these changes. 
 
-Let’s see what git thinks about what we’re doing:
+All together: 
 
-```bash
-git status
-```
+1. Files in your **Working Directory** can be described as
+    a. Untracked files 
+    b. Tracked and unmodified files
+    c. Tracked, modified, but unstaged files
+2. Staging Area 
+    a. Tracked, modified, and staged. 
+3. HEAD
 
-The `git status` command reports that `hello.c` and `a.out` are "Untracked".
-We can have git track `hello.c` by adding it to the "staging" area (more
-on this later):
 
-```bash
-git add hello.c
-```
+The local repository in Git is a representation of your project's code and its evolution over time. It's made up of three main components: the HEAD (reference to the most recent "commit" think, the most recent revision to your code), the working directory (where changes are made), and the staging area (where changes are prepared for commit). Moving changes through these components is like saving mini "versions" of your work, with Git tracking the differences between them. To make changes in the working directory the current revision, you stage them, move them to the staging area, and then commit them to the local repository.
 
-Run `git status` again. It now reports that `hello.c` is "a new file to
-be committed." Let’s commit it:
-
-```bash
-git commit
-```
-
-Git opens up your editor for you to type a commit message. A commit
-message should succinctly describe what you’re committing in the first
-line. If you have more to say, follow the first line with a blank
-line, and then with a more thorough multi-line description.
-
-For now, type in the following one-line commit message, save, and exit
-the editor: `Added hello-world program`
-You can also do this in a one-line command with the `-m` flag. `-m`. specifies the commit message without opening a text editor:
-
-```bash
-git commit -m "Added hello-world program"
-```
-
-Run `git status` again. It now reports that only `a.out` is untracked.
-It has no mention of `hello.c`. When git says nothing about a file, it
-means that it is being tracked, and that it has not changed since it
-has been last committed.
-
-We have successfully put our first coding project under git revision
-control.
-
-## Modifying files
-
-Modify `hello.c` to print "bye world" instead, and run `git status`. It
-reports that the file is "Changed but not updated." This means that
-the file has been modified since the last commit, but it is still not
-ready to be committed because it has not been moved into the staging
-area. In git, a file must first go to the staging area before it can
-be committed.
-
-Before we move it to the staging area, let’s see what we changed in
-the file:
-
-```bash
-git diff
-```
-
-Or, if your terminal supports color,
-
-```bash
-git diff --color
-```
-
-The output should tell you that you took out the "hello world" line,
-and added a "bye world" line, like this:
-
-```diff
-- printf("%s\n", "hello world");
-+ printf("%s\n", "bye world");
-```
-
-We move the file to the staging area with git add command:
-
-```bash
-git add hello.c
-```
-
-In git, "add" means this: move the change you made to the staging
-area. The change could be a modification to a tracked file, or it
-could be a creation of a brand new file. This is a point of confusion
-for those of you who are familiar with other version control systems
-such as Subversion.
-
-At this point, `git diff` will report no change. Our change -- from
-hello to bye -- has been moved into staging already. So this means that
-`git diff` reports the difference between the staging area and the
-working copy of the file.
-
-To see the difference between the last commit and the staging area,
-add `--cached` option:
-
-```bash
-git diff --cached
-```
-
-Let’s commit our change. If your commit message is a one-liner, you
-can skip the editor by giving the message directly as part of the git
-commit command:
-
-```bash
-git commit -m "changed hello to bye"
-```
-
-To see your commit history:
-
-```bash
-git log
-```
-
-You can add a brief summary of what was done at each commit:
-
-```bash
-git log --stat --summary
-```
-
-Or you can see the full diff at each commit:
-
-```bash
-git log -p
-```
-
-And in color:
-
-```bash
-git log -p --color
-```
 
 ## The tracked, the modified, and the staged
 
@@ -216,22 +96,7 @@ A file in a directory under git revision control is either tracked or
 untracked. A tracked file can be unmodified, modified but unstaged,
 or modified and staged. Confused? Let’s try again.
 
-There are four possibilities for a file in a git-controlled directory:
 
-1.  Untracked
-
-    - Object files and executable files that can be rebuilt are usually not tracked.
-
-1.  Tracked, unmodified
-    - The file is in the git repository, and it has not been modified since the last commit. `git status` says nothing about the file.
-
-1.  Tracked, modified, but unstaged
-
-    - You modified the file, but didn’t `git add` the file. The change has not been staged, so it’s not ready for commit yet.
-
-1.  Tracked, modified, and staged
-
-    - You modified the file, and did `git add` the file. The change has been moved to the staging area. It is ready for commit.
 
 The staging area is also called the "index".
 
