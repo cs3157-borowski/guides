@@ -59,3 +59,6 @@ So if you cloned a clean version of the repo and checked out to the handin tag, 
 
 ## Very Important Reminder 
 As a general reminder, submitting and testing your code is as important as the development of the homework code itself, so it is critical that you apply the skills above for every submission.
+
+### Acknowledgements
+This guide was developed by Xurxo Riesco and edited by Phillip Le. 
