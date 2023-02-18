@@ -1,6 +1,6 @@
 # Submission Clarifications #
 
-The teaching staff noticed that there were a lot of discrepancies between the work that students thought they submitted and what the teaching staff recieved to grade. The TAs will only grade the code in your handin tag, and **unfortunately we can't make any exceptions to this rule**; however, we want to ensure that you get credited for all the work you do in the future, and you have necessary skillset to obtain a good score in the homework assignments which goes beyond just coding skill.
+The teaching staff noticed that there were a lot of discrepancies between the work that students thought they submitted and what the teaching staff received to grade. The TAs will only grade the code in your handin tag, and **unfortunately we can't make any exceptions to this rule**; however, we want to ensure that you get credited for all the work you do in the future, and you have necessary skillset to obtain a good score in the homework assignments which goes beyond just coding skill.
 
 Let's review the tools you already know about, that will help you ensure that:
 1. All your code is in the handin tag.
