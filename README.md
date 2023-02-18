@@ -10,3 +10,4 @@ developed by the TAs for Prof. Brian Borowski's offering of the course.
 - [Git](git.md): Introduction to Git.
 - [Vim](vim-notes.pdf): Vim Guide
 - [Valgrind](valgrind.md): Understanding Valgrind Messages
+- [Submission Clarifications](submission.md): Confirming your HW Submissions
