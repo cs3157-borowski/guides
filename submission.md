@@ -3,6 +3,7 @@
 The teaching staff noticed that there were a lot of discrepancies between the work that students thought they submitted and what the teaching staff received to grade. The TAs will only grade the code in your handin tag, and **unfortunately we can't make any exceptions to this rule**; however, we want to ensure that you get credited for all the work you do in the future, and you have necessary skillset to obtain a good score in the homework assignments which goes beyond just coding skill.
 
 Let's review the tools you already know about, that will help you ensure that:
+
 1. All your code is in the handin tag.
 2. Your directory structure is correct.
 3. You have the necessary amount of commits.
@@ -64,9 +65,7 @@ Note that checking manually on GitHub on the commits history section (rightmost 
 
 ## Compilation
 
-The TAs will make no effort to compile your code besides running make 
-
-So if you cloned a clean version of the repo and checked out to the handin tag, you should go into the src directories for each part and run nothing but make , which should produce an executable identical to the one the TAs will use for grading. You should run a few tests after generating the executable even if you have tested your code prior to adding the tag and pushing the changes.
+The TAs will make no effort to compile your code besides running `make`. So if you cloned a clean version of the repo and checked out to the handin tag, you should go into the src directories for each part and run nothing but make , which should produce an executable identical to the one the TAs will use for grading. You should run a few tests after generating the executable even if you have tested your code prior to adding the tag and pushing the changes.
 
 ## Very Important Reminder
 
@@ -74,4 +73,4 @@ As a general reminder, submitting and testing your code is as important as the d
 
 ### Acknowledgements
 
-This guide was developed by Xurxo Riesco and edited by Phillip Le for Spring 2023. 
+This guide was developed by Xurxo Riesco and edited by Phillip Le for Spring 2023.
