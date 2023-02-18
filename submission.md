@@ -10,7 +10,7 @@ Let's review the tools you already know about, that will help you ensure that:
 
 ## The handin tag ##
 
-After you have tagged your work, and pushed to GitHub, an easy way to ensure that all your work has properly been tagged is to switch the repository view to the handin tag using the leftmost dropdown menu, once the button shows "handin" any files you see are exactly what the TAs will see when grading. Please please double check that the files listed reflect what you want the TA's to see. 
+After you have tagged your work, and pushed to GitHub, an easy way to ensure that all your work has properly been tagged is to switch the repository view to the handin tag using the leftmost dropdown menu, once the button shows "handin" any files you see are exactly what the TAs will see when grading. Please double check that the files listed reflect what you want the TA's to see. 
 
 ![image](https://user-images.githubusercontent.com/101436499/219896712-a43c3016-5b0b-4f8b-875a-0641d5dc7547.png)
 
