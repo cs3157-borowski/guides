@@ -40,7 +40,7 @@ If you recall, the tree command will actually produce a very similar output, so 
 First, get a clean copy of your repo, by using the clone command with the correct homework number and team number:
 
 ```
-git clone git@github.com:cs3157-borowski-s23/hw1-team0 ~/cs3157/hw1-submission
+git clone git@github.com:cs3157-borowski-s23/hw1-0 ~/cs3157/hw1-submission
 ```
 
 Then go into the clean copy, and use the tree command:
