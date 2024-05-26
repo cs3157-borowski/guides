@@ -35,12 +35,12 @@ part2
 README.md
 ```
 
-If you recall, the tree command will actually produce a very similar output, so after you are satisfied with your work and have tagged and pushed it, you should run the following sequence of commands to verify your directory structure is as expected.
+If you recall, the tree command will actually produce a very similar output, so after you are satisfied with your work and have pushed it, you should run the following sequence of commands to verify your directory structure is as expected.
 
 First, get a clean copy of your repo, by using the clone command with the correct homework number and team number:
 
 ```
-git clone git@github.com:cs3157-borowski-s23/hw1-team0 ~/cs3157/hw1-submission
+git clone git@github.com:cs3157-borowski-s23/hw1-0 ~/cs3157/hw1-submission
 ```
 
 Then go into the clean copy, and use the tree command:
@@ -50,7 +50,7 @@ cd ~/cs3157/hw1-submission
 tree
 ```
 
-The output should show the same directory structure as the prompt. Note that you are allowed to have extra source files (.h and .c) but not any executables/.o files/anything else extraneous. Furthermore, if the assignment is in C, the file names should show up in white if you are using the default color scheme and .bashrc meaning that they do not have the execute permission bit on.
+The output should show the same directory structure as the prompt. Note that extra source files (.h and .c) and/or any executables/.o files/anything else will be considered extraneous and automatically removed. Furthermore, if the assignment is in C, the file names should show up in white if you are using the default color scheme and .bashrc meaning that they do not have the execute permission bit on.
 
 Note that manually checking on GitHub by inspecting each directory and the files within it is also a reliable way to test this.
 
@@ -62,7 +62,7 @@ Note that manually checking the commits history section (rightmost header above 
 
 ## Compilation
 
-The TAs will make no effort to compile your code besides running `make`. So if you cloned a clean version of the repo, you should go into the src directories for each part and run nothing but make, which should produce an executable identical to the one the TAs will use for grading. You should run a few tests after generating the executable even if you have tested your code prior to adding the tag and pushing the changes.
+The TAs will make no effort to compile your code besides running `make`. So if you cloned a clean version of the repo, you should go into the src directories for each part and run nothing but make, which should produce an executable identical to the one the TAs will use for grading. You should run a few tests after generating the executable even if you have tested your code prior to pushing the changes.
 
 ## Very Important Reminder
 
