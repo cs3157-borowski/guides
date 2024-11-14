@@ -50,7 +50,7 @@ cd ~/cs3157/hw1-submission
 tree
 ```
 
-The output should show the same directory structure as the prompt. Note that you are allowed to have extra source files (.h and .c) but not any executables/.o files/anything else extraneous. Furthermore, if the assignment is in C, the file names should show up in white if you are using the default color scheme and .bashrc meaning that they do not have the execute permission bit on.
+The output should show the same directory structure as the prompt. Note that extra source files (.h and .c) and/or any executables/.o files/anything else will be considered extraneous and automatically removed. Furthermore, if the assignment is in C, the file names should show up in white if you are using the default color scheme and .bashrc meaning that they do not have the execute permission bit on.
 
 Note that manually checking on GitHub by inspecting each directory and the files within it is also a reliable way to test this.
 
