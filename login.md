@@ -19,7 +19,7 @@ On Windows, we recommend using [Windows Terminal](https://learn.microsoft.com/en
 Using one of these programs, type this into the command line to establish your connection to our server:
 
 ```yaml
-ssh YOUR_UNI@ap.cs.columbia.edu
+ssh YOUR_UNI@bb.cs.columbia.edu
 ```
 
 You should be prompted to input your password which you should have received in an email. Note, you will not see the characters you type when entering the password.
