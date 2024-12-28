@@ -10,7 +10,7 @@ The command line in a UNIX coding environment allows you to interact with the op
 
 ## Logging in to our Class Server
 
-Students will receive an account on the AP server, which is a server instance running on Google Cloud Platform. Think of this as logging into a remote computer where you will do all your work instead of working on and saving files to your local computer. You will access the class server using SSH, which allows a secure terminal session with our class server.
+Students will receive an account on the BB server, which is a server instance running on Google Cloud Platform. Think of this as logging into a remote computer where you will do all your work instead of working on and saving files to your local computer. You will access the class server using SSH, which allows a secure terminal session with our class server.
 
 For those of you using macOS, we recommend using its [Terminal](https://support.apple.com/guide/terminal/welcome/mac).
 
@@ -36,11 +36,11 @@ $ echo $SHELL
 When you type a command into your shell you're running a program, much like clicking on an icon to launch a program on a GUI based operating system. We just used the `echo` program. `echo` prints out the text that you input as command line arguments. For example:
 
 ```console
-$ echo Hello AP!
-Hello AP!
+$ echo Hello BB!
+Hello BB!
 ```
 
-There are many other useful commands. In fact, we've already used one — the `ssh` command when logging into the AP server. A few more examples:
+There are many other useful commands. In fact, we've already used one — the `ssh` command when logging into the BB server. A few more examples:
 
 ```console
 $ date
@@ -55,9 +55,9 @@ Python 3.10.7 (main, Nov 24 2022, 19:45:47) [GCC 12.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 
-$ cowsay Hello AP!
+$ cowsay Hello BB!
  ___________
-< Hello AP! >
+< Hello BB! >
  -----------
         \   ^__^
          \  (oo)\_______
