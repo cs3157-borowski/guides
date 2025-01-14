@@ -402,9 +402,9 @@ It can remove the handin tag just made in your local machine.
 
 Assuming you didn't delete the handin tag, you are ready to push
 your "hw0 submission" to the remote server.
-The `git push` command takes two arguments:
-    A remote name, for example, origin
-    A branch name, for example, main
+The `git push` command takes two arguments:  
+    A remote name, for example, origin  
+    A branch name, for example, main  
 
 ```bash
 git push origin main
