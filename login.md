@@ -84,5 +84,6 @@ Getting comfortable with your text-editor is very important for this course and 
 This guide was originally developed by Jae Woo Lee.
 
 It was adapted for Dr. Borowski's version of the class by the following TAs:
+
 - Phillip Le and Jeremy Carin (Spring 23)
 - Palash Sharma and Carl von Bonin (Spring 25)
