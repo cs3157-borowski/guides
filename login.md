@@ -1,6 +1,6 @@
 # Getting Started in UNIX Coding Environment
 
-Welcome to COMSW 3157 Advanced Programming with Dr. Brian Borowski! Prior to this course, you may have used various coding environments like Codio, VSCode, etc. But this guide will introduce you to the one that we use for AP. It is very important that you read through this guide so that you will be able to do the assignments for this course.
+Welcome to COMSW 3157 Advanced Programming with Dr. Brian Borowski! Prior to this course, you may have used various coding environments like Eclipse, Codio, VSCode, etc. You may have some prior experience with using the command line, but this class requires really getting comfortable with it. It is very important that you read through this guide so that you will be able to do the assignments for this course.
 
 You will be interacting with the UNIX coding environment via the command line.
 
@@ -10,7 +10,7 @@ The command line in a UNIX coding environment allows you to interact with the op
 
 ## Logging in to our Class Server
 
-Students will receive an account on the BB server, which is a server instance running on Google Cloud Platform. Think of this as logging into a remote computer where you will do all your work instead of working on and saving files to your local computer. You will access the class server using SSH, which allows a secure terminal session with our class server.
+Students will receive an account on the BB server, which is a server instance running on Google Cloud Platform. Think of this as logging into a remote computer where you will be able to test your work in the same environment as we will use for grading. You will access the class server using SSH, which allows a secure terminal session with our class server.
 
 For those of you using macOS, we recommend using its [Terminal](https://support.apple.com/guide/terminal/welcome/mac).
 
@@ -22,7 +22,7 @@ Using one of these programs, type this into the command line to establish your c
 ssh YOUR_UNI@bb.cs.columbia.edu
 ```
 
-You should be prompted to input your password which you should have received in an email. Note, you will not see the characters you type when entering the password.
+You should be prompted to input your password which you should have received in an email titled `Your BB Server Account`. **Note, you will not see the characters you type when entering the password.**
 
 ## Interacting with the Shell
 
@@ -74,13 +74,15 @@ For a more detailed walkthrough of the command line, we recommend [this video](h
 
 ## Writing Code with a Text Editor
 
-In this course, you will be writing code using a command line text editor on the class server. In previous semesters, most students and professors recommend Vim. But you can do your own research and use any text-editor that you feel comfortable with (for example, Emacs). You may, however, be tested on the basics of Vim.
+In this course, you may use any text editor or integrated development environment (IDE) of your choice. Most students use [Visual Studio Code](https://code.visualstudio.com/) when working on their local machine, and `vim`, a command line text editor, when working on the BB server. Regardless of your choice, you should get familiar with the basics of `vim`, as it will come in handy when testing code on the class server. You can use the built-in tutorial by running `vimtutor` in the command-line.
 
-Spend the first few days going through the tutorials for your chosen text-editor. For those of you who choose Vim, you can use the built-in tutorial by running `vimtutor` in the command-line. Getting comfortable with your text-editor is very important for this course and will make it a lot easier when assignments become more complex, so practice early!
+Getting comfortable with your text-editor is very important for this course and will make it a lot easier when assignments become more complex, so practice early!
 
 
 ### Acknowledgments
 
 This guide was originally developed by Jae Woo Lee.
 
-Phillip Le and Jeremy Carin adapted it in Spring 23.
+It was adapted for Dr. Borowski's version of the class by the following TAs:
+- Phillip Le and Jeremy Carin (Spring 23)
+- Palash Sharma and Carl von Bonin (Spring 25)
