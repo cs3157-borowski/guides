@@ -10,7 +10,7 @@ The command line in a UNIX coding environment allows you to interact with the op
 
 ## Logging in to our Class Server
 
-Students will receive an account on the BB server, which is a server instance running on Google Cloud Platform. Think of this as logging into a remote computer where you will be able to test your work in the same environment as we will use for grading. You will access the class server using SSH, which allows a secure terminal session with our class server.
+Students will receive an account on the BSB server, which is a server instance running on Google Cloud Platform. Think of this as logging into a remote computer where you will be able to test your work in the same environment as we will use for grading. You will access the class server using SSH, which allows a secure terminal session with our class server.
 
 For those of you using macOS, we recommend using its [Terminal](https://support.apple.com/guide/terminal/welcome/mac).
 
@@ -19,10 +19,10 @@ On Windows, we recommend using [Windows Terminal](https://learn.microsoft.com/en
 Using one of these programs, type this into the command line to establish your connection to our server:
 
 ```yaml
-ssh YOUR_UNI@bb.cs.columbia.edu
+ssh YOUR_UNI@bsb.cs.columbia.edu
 ```
 
-You should be prompted to input your password which you should have received in an email titled `Your BB Server Account`. **Note, you will not see the characters you type when entering the password.**
+You should be prompted to input your password which you should have received in an email titled `Your BSB Server Account`. **Note, you will not see the characters you type when entering the password.**
 
 ## Interacting with the Shell
 
@@ -36,8 +36,8 @@ $ echo $SHELL
 When you type a command into your shell you're running a program, much like clicking on an icon to launch a program on a GUI based operating system. We just used the `echo` program. `echo` prints out the text that you input as command line arguments. For example:
 
 ```console
-$ echo Hello BB!
-Hello BB!
+$ echo Hello BSB!
+Hello BSB!
 ```
 
 There are many other useful commands. In fact, we've already used one — the `ssh` command when logging into the BB server. A few more examples:
@@ -55,9 +55,9 @@ Python 3.10.7 (main, Nov 24 2022, 19:45:47) [GCC 12.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 
-$ cowsay Hello BB!
+$ cowsay Hello BSB!
  ___________
-< Hello BB! >
+< Hello BSB! >
  -----------
         \   ^__^
          \  (oo)\_______
