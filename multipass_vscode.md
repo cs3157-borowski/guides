@@ -6,6 +6,7 @@ This setup allows you to leverage Linux features without the use of Vim or Nano.
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
+
 - [Multipass](https://multipass.run/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -13,6 +14,7 @@ Before you begin, ensure you have the following installed on your system:
 ## Step 1: Create a Multipass VM
 
 Open your terminal and create a new Multipass VM:
+
 ```bash
 multipass launch lts --name primary --cpus 4 --memory 4G --disk 12G
 ```
@@ -25,12 +27,15 @@ On your MacBook, check if you already have an SSH key pair. Open your terminal a
 ```bash
 ls ~/.ssh/id_rsa.pub
 ```
+
 If it exists: Copy the content to your clipboard: (or manually copy it if `pbcopy` is not working)
+
 ```bash
 cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 
 If it doesn't, generate one first:
+
 ```bash
 ssh-keygen -t rsa -b 4096
 ```
@@ -99,25 +104,30 @@ Once connected, you can open a folder on the VM by going to File > Open Folder..
 
 In the future, to open your project in VS Code using the Multipass VM, follow these steps:
 1. Start your Multipass VM if it's not already running:
+
 ```bash
    multipass start primary
 ```
-3. Open VS Code.
-4. Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
-5. Select Connect to Host... and choose multipass-local-vm.
+
+2. Open VS Code.
+3. Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
+4. Select Connect to Host... and choose multipass-local-vm.
 
 
 ## Troubleshooting
 
 - If you encounter permission issues, ensure that the `~/.ssh/authorized_keys` file on the VM has the correct permissions:
-  ```bash
+
+```bash
   multipass exec primary -- chmod 600 ~/.ssh/authorized_keys
-  ```
+```
+
 - If the connection fails, double-check the IP address in your SSH config file and ensure the Multipass VM is running.
 - If you need to restart the Multipass VM, use:
-  ```bash
+
+```bash
   multipass restart primary
-  ```
+```
 
 
 ### Acknowledgements
