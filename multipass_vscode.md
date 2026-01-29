@@ -4,12 +4,14 @@ This guide will walk you through the steps to set up coding in Visual Studio cod
 This setup allows you to leverage Linux features without the use of Vim or Nano.
 
 ## Prerequisites
+
 Before you begin, ensure you have the following installed on your system:
 - [Multipass](https://multipass.run/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 
 ## Step 1: Create a Multipass VM
+
 Open your terminal and create a new Multipass VM:
 ```bash
 multipass launch lts --name primary --cpus 4 --memory 4G --disk 12G
@@ -17,6 +19,7 @@ multipass launch lts --name primary --cpus 4 --memory 4G --disk 12G
 
 
 ## Step 2: Prepare Your SSH Key
+
 On your MacBook, check if you already have an SSH key pair. Open your terminal and run:
 
 ```bash
@@ -38,6 +41,7 @@ Follow the prompts (pressing Enter for defaults is fine), then copy the public k
 
 
 ## Step 3: Add the Key to Your Multipass Instance
+
 You need to tell the Ubuntu instance to trust your MacBook's key. Replace primary with your instance name if it's different.
 
 ```bash
@@ -60,6 +64,7 @@ exit
 
 
 ## Step 4. Configure VS Code
+
 Install Extension: Ensure you have the Remote - SSH extension installed in VS Code.
 
 Edit Config: Press `Cmd + Shift + P`, type Remote-SSH: Open SSH Configuration File..., and select ~/.ssh/config.
@@ -75,6 +80,7 @@ Host multipass-local-vm
 
 
 ## Step 5. Connect
+
 Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
 
 Select Connect to Host... and choose multipass-local-vm.
@@ -83,12 +89,14 @@ A new window will open. Select Linux as the platform if prompted.
 
 
 ## Step 6: Open Your Project
+
 Once connected, you can open a folder on the VM by going to File > Open Folder... and navigating to your desired directory.
 
 ### Done! Now you can code in VS Code using your Multipass VM.
 
 
 ## Opening your Project in the Future
+
 In the future, to open your project in VS Code using the Multipass VM, follow these steps:
 1. Start your Multipass VM if it's not already running:
 ```bash
@@ -100,6 +108,7 @@ In the future, to open your project in VS Code using the Multipass VM, follow th
 
 
 ## Troubleshooting
+
 - If you encounter permission issues, ensure that the `~/.ssh/authorized_keys` file on the VM has the correct permissions:
   ```bash
   multipass exec primary -- chmod 600 ~/.ssh/authorized_keys
