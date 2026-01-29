@@ -130,6 +130,10 @@ In the future, to open your project in VS Code using the Multipass VM, follow th
   multipass restart primary
 ```
 
+## Next Steps
+
+- Add an SSH key from your Multipass VM to GitHub, using [this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
 
 ### Acknowledgements
 
