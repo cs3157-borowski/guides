@@ -25,19 +25,19 @@ multipass launch lts --name primary --cpus 4 --memory 4G --disk 12G
 On your MacBook, check if you already have an SSH key pair. Open your terminal and run:
 
 ```bash
-ls ~/.ssh/id_rsa.pub
+ls ~/.ssh/id_ed25519.pub
 ```
 
 If it exists: Copy the content to your clipboard: (or manually copy it if `pbcopy` is not working)
 
 ```bash
-cat ~/.ssh/id_rsa.pub | pbcopy
+cat ~/.ssh/id_ed25519.pub | pbcopy
 ```
 
 If it doesn't, generate one first:
 
 ```bash
-ssh-keygen -t rsa -b 4096
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 Follow the prompts (pressing Enter for defaults is fine), then copy the public key as shown above.
@@ -80,7 +80,7 @@ Add Entry: Add the following block (using the IPv4 address from multipass list):
 Host multipass-local-vm
     HostName 192.168.64.x  # Replace with your VM's IP
     User ubuntu
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/id_ed25519
 ```
 
 
