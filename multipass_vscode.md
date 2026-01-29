@@ -21,7 +21,7 @@ On your MacBook, check if you already have an SSH key pair. Open your terminal a
 ```bash
 ls ~/.ssh/id_rsa.pub
 ```
-If it exists: Copy the content to your clipboard: 
+If it exists: Copy the content to your clipboard: (or manually copy it if `pbcopy` is not working)
 ```bash
 cat ~/.ssh/id_rsa.pub | pbcopy
 ```
@@ -32,6 +32,8 @@ ssh-keygen -t rsa -b 4096
 ```
 
 Follow the prompts (pressing Enter for defaults is fine), then copy the public key as shown above.
+
+*Note: unless you're working for the NSA, you can leave the passphrase empty for convenience. Usually what ends up happening is you forget your passphrase or write it down somewhere, making the security worthless.*
 
 ## Step 3: Add the Key to Your Multipass Instance
 You need to tell the Ubuntu instance to trust your MacBook's key. Replace primary with your instance name if it's different.
