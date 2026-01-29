@@ -84,7 +84,7 @@ Host multipass-local-vm
 ```
 
 
-## Step 5. Connect
+## Step 5: Connect
 
 Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
 
@@ -105,12 +105,14 @@ Once connected, you can open a folder on the VM by going to File > Open Folder..
 In the future, to open your project in VS Code using the Multipass VM, follow these steps:
 
 1. Start your Multipass VM if it's not already running:
-```bash
-   multipass start primary
-```
-2. Open VS Code.
-3. Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
-4. Select Connect to Host... and choose multipass-local-vm.
+
+	```bash
+	multipass start primary
+	```
+
+1. Open VS Code.
+2. Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
+3. Select Connect to Host... and choose multipass-local-vm.
 
 
 ## Troubleshooting
