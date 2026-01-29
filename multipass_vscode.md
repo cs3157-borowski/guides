@@ -27,7 +27,7 @@ If it exists: Copy the content to your clipboard: (or manually copy it if `pbcop
 cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 
-If it doesn't: Generate one first:
+If it doesn't, generate one first:
 ```bash
 ssh-keygen -t rsa -b 4096
 ```
