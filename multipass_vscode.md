@@ -1,6 +1,6 @@
 # Setting up Multipass with VS Code
 
-This guide will walk you through the steps to set up coding in Visual Studio code (VS Code) using Multipass virtual machines (VMs). 
+This guide will walk you through the steps to set up coding in Visual Studio code (VS Code) using Multipass virtual machines (VMs).
 This setup allows you to leverage Linux features without the use of Vim or Nano.
 
 ## Prerequisites
@@ -15,6 +15,7 @@ Open your terminal and create a new Multipass VM:
 multipass launch lts --name primary --cpus 4 --memory 4G --disk 12G
 ```
 
+
 ## Step 2: Prepare Your SSH Key
 On your MacBook, check if you already have an SSH key pair. Open your terminal and run:
 
@@ -26,7 +27,7 @@ If it exists: Copy the content to your clipboard: (or manually copy it if `pbcop
 cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 
-If it doesn't: Generate one first: 
+If it doesn't: Generate one first:
 ```bash
 ssh-keygen -t rsa -b 4096
 ```
@@ -34,6 +35,7 @@ ssh-keygen -t rsa -b 4096
 Follow the prompts (pressing Enter for defaults is fine), then copy the public key as shown above.
 
 *Note: unless you're working for the NSA, you can leave the passphrase empty for convenience. Usually what ends up happening is you forget your passphrase or write it down somewhere, making the security worthless.*
+
 
 ## Step 3: Add the Key to Your Multipass Instance
 You need to tell the Ubuntu instance to trust your MacBook's key. Replace primary with your instance name if it's different.
@@ -56,6 +58,7 @@ echo 'your-copied-public-key' >> ~/.ssh/authorized_keys
 exit
 ```
 
+
 ## Step 4. Configure VS Code
 Install Extension: Ensure you have the Remote - SSH extension installed in VS Code.
 
@@ -69,6 +72,8 @@ Host multipass-local-vm
     User ubuntu
     IdentityFile ~/.ssh/id_rsa
 ```
+
+
 ## Step 5. Connect
 Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
 
@@ -76,10 +81,12 @@ Select Connect to Host... and choose multipass-local-vm.
 
 A new window will open. Select Linux as the platform if prompted.
 
+
 ## Step 6: Open Your Project
 Once connected, you can open a folder on the VM by going to File > Open Folder... and navigating to your desired directory.
 
 ### Done! Now you can code in VS Code using your Multipass VM.
+
 
 ## Opening your Project in the Future
 In the future, to open your project in VS Code using the Multipass VM, follow these steps:
@@ -89,7 +96,7 @@ In the future, to open your project in VS Code using the Multipass VM, follow th
 ```
 3. Open VS Code.
 4. Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
-5. Select Connect to Host... and choose multipass-local-vm.	
+5. Select Connect to Host... and choose multipass-local-vm.
 
 
 ## Troubleshooting
@@ -102,6 +109,7 @@ In the future, to open your project in VS Code using the Multipass VM, follow th
   ```bash
   multipass restart primary
   ```
+
 
 ### Acknowledgements
 
