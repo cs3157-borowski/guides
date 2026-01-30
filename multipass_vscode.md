@@ -110,16 +110,16 @@ Here is the corrected Markdown:
 
 In the future, to open your project in VS Code using the Multipass VM, follow these steps:
 
-1. Start your Multipass VM if it's not already running:
+1.  Start your Multipass VM if it's not already running:
 
    ```bash
    multipass start primary
    ```
 
-2. Open VS Code.
-3. Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
-4. Select Connect to Host... and choose multipass-local-vm.
-
+2.  Open VS Code.
+3.  Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
+4.  Select Connect to Host... and choose multipass-local-vm.
+f
 
 ## Troubleshooting
 
