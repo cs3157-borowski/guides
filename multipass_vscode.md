@@ -1,7 +1,7 @@
 # Setting up Multipass with VS Code
 
 This guide will walk you through the steps to set up coding in Visual Studio code (VS Code) using Multipass virtual machines (VMs).
-This setup allows you to leverage Linux features without the use of Vim or Nano.
+This setup allows you to leverage Linux features without the use of Vim or Nano. This setup can also work in your favorite code editor.
 
 ## Prerequisites
 
@@ -19,7 +19,6 @@ Open your terminal and create a new Multipass VM:
 multipass launch lts --name primary --cpus 4 --memory 4G --disk 12G
 ```
 
-
 ## Step 2: Prepare Your SSH Key
 
 On your MacBook, check if you already have an SSH key pair. Open your terminal and run:
@@ -28,7 +27,7 @@ On your MacBook, check if you already have an SSH key pair. Open your terminal a
 ls ~/.ssh/id_ed25519.pub
 ```
 
-If it exists: Copy the content to your clipboard: (or manually copy it if `pbcopy` is not working)
+If it exists: copy the content to your clipboard: (or manually copy it if `pbcopy` is not working)
 
 ```bash
 cat ~/.ssh/id_ed25519.pub | pbcopy
