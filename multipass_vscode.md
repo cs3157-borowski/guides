@@ -99,15 +99,22 @@ Once connected, you can open a folder on the VM by going to File > Open Folder..
 ### Done! Now you can code in VS Code using your Multipass VM
 
 
+To fix these errors, you need to properly nest the code block inside the first list item.
+
+In Markdown, if a code block is not indented, it breaks the list. This causes the linter to think the list has ended, so when it sees `2.`, it flags it as an error because a "new" list should start with `1.`.
+
+Here is the corrected Markdown:
+
+
 ## Opening your Project in the Future
 
 In the future, to open your project in VS Code using the Multipass VM, follow these steps:
 
 1. Start your Multipass VM if it's not already running:
 
-```bash
-	multipass start primary
-```
+   ```bash
+   multipass start primary
+   ```
 
 2. Open VS Code.
 3. Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
