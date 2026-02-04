@@ -146,7 +146,7 @@ git push
 
 - **Server URL:** `bsb.cs.columbia.edu`
 - **Username:** Your Columbia UNI
-- **Operating System:** Ubuntu 24.04.03
+- **Operating System:** Ubuntu 24.04.3
 - **Login command:** `ssh UNI@bsb.cs.columbia.edu`
 
 ## Related Guides
