@@ -1,6 +1,6 @@
-# SSHing into bb
+# SSHing into bsb
 
-Are you tired of entering your password to log into bsb? If so, you’ll want to set up your SSH keys so that you can authenticate without a password. This is highly recommended.
+Are you tired of entering your password to log into bsb? If so, you’ll want to set up SSH keys to authenticate without a password. This is highly recommended.
 
 First, if you haven’t already, generate an Ed25519 key pair on your local machine and add it to your ssh-agent following this [excellent guide by GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). And while you’re at it, [add your key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). This is necessary for authenticating with GitHub since it no longer supports authenticating over HTTPS.
 
@@ -41,7 +41,7 @@ Host *
     AddKeysToAgent yes
 ```
 
-This says that for any host you SSH into successfully, forward your credentials. Note that if you decide to do this, you should be careful to only SSH into trusted machines. We avoid having to deal with specifying the target machine’s information by bbplying this blanket rule.
+This says that for any host you SSH into successfully, forward your credentials. Note that if you decide to do this, you should be careful to only SSH into trusted machines. We avoid having to specify the target machine’s information by applying this blanket rule.
 
 After adding one of the two above configurations, you’ll then be able to SSH into bb with the following shorter command:
 
