@@ -164,4 +164,4 @@ _Remember: Only code pushed to GitHub before the deadline will be graded. When i
 
 ### Acknowledgements
 
-This guide was written by Amit Aharoni, January 2026
+This guide was written by Amit Aharoni, February 2026
