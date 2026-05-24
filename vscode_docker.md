@@ -1,138 +1,57 @@
 # Setting up Docker with VS Code
 
-This guide will walk you through the steps to set up coding in Visual Studio Code (VS Code) using Docker.
-This setup allows you to leverage Linux features without using Vim or Nano. This setup can also work in your favorite code editor.
+This guide will walk you through editing your code in Visual Studio Code (VS Code) while running and compiling it inside your Docker container.
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed on your system:
+Before you begin, ensure you have:
 
-- [Docker](https://www.docker.com/)
-- [Visual Studio Code](https://code.visualstudio.com/)
+- Docker set up and running using the [ap-env guide](https://github.com/CUAdvProg/ap-env)
+- [Visual Studio Code](https://code.visualstudio.com/) installed
+- Two terminal windows open:
+  - One **inside your Docker container** (from running `./run_docker.sh`)
+  - One on your **local machine**
 
+## Step 1: Install the Dev Containers Extension
 
-## Step 1: Create a Docker VM
+Open VS Code and install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension by Microsoft.
 
-Set up Docker through this [guide](https://github.com/CUAdvProg/ap-env/blob/main/README.md).
+## Step 2: Make Sure Your Container Is Running
 
-## Step 2: Prepare Your SSH Key
-
-On your local machine, check if you already have an SSH key pair. Open your terminal and run:
-
-```bash
-ls ~/.ssh/id_ed25519.pub
-```
-
-If it exists: copy the content to your clipboard: (or manually copy it if `pbcopy` is not working)
+In your local terminal, navigate to your `ap-env` folder and start the container if it isn't already:
 
 ```bash
-cat ~/.ssh/id_ed25519.pub | pbcopy
+./run_docker.sh
 ```
 
-If it doesn't, generate one first:
+You should now have a shell inside the container. Keep this window open.
 
-```bash
-ssh-keygen -t ed25519 -C "your_email@example.com"
-```
+## Step 3: Attach VS Code to the Container
 
-Follow the prompts (pressing Enter for defaults is fine), then copy the public key as shown above.
+1. Open VS Code.
+2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows) to open the Command Palette.
+3. Type **Dev Containers: Attach to Running Container...** and select it.
+4. Choose the `ap-env` container from the list.
 
-*Note: unless you're working for the NSA, you can leave the passphrase empty for convenience. Usually what ends up happening is you forget your passphrase or write it down somewhere, making the security worthless.*
+A new VS Code window will open connected to the container.
 
+## Step 4: Open Your Project
 
-## Step 3: Add the Key to Your Docker Instance
+In the new VS Code window, go to **File > Open Folder...** and navigate to `/ap`. This is your working directory inside the container, and it mirrors the `ap-env` folder on your local machine — so any files you edit in VS Code will instantly be available inside the container.
 
-You need to tell the Ubuntu instance to trust your local machine's key. Replace primary with your instance name if it's different.
+### Done! You can now edit code in VS Code and compile/run it in your Docker terminal.
 
-```bash
-# Get the IP address of your instance
-# Note: this IP address may change if you restart the instance
-multipass list
+## Opening Your Project in the Future
 
-# Add your key to the instance
-multipass exec primary -- bash -c "echo '$(pbpaste)' >> ~/.ssh/authorized_keys"
-```
-
-Note, if that doesn't work, you can manually open a shell in the instance and add the key:
-
-```bash
-multipass shell primary
-# Then inside the instance:
-echo 'your-copied-public-key' >> ~/.ssh/authorized_keys
-exit
-```
-
-
-## Step 4: Configure VS Code
-
-Install Extension: Ensure you have the Remote - SSH extension installed in VS Code.
-
-Edit Config: Press `Cmd + Shift + P`, type Remote-SSH: Open SSH Configuration File..., and select ~/.ssh/config.
-
-Add Entry: Add the following block (using the IPv4 address from multipass list):
-
-```bash
-Host multipass-local-vm
-    HostName 192.168.64.x  # Replace with your VM's IP
-    User ubuntu
-    IdentityFile ~/.ssh/id_ed25519
-```
-
-
-## Step 5: Connect
-
-Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
-
-Select Connect to Host... and choose multipass-local-vm.
-
-A new window will open. Select Linux as the platform if prompted.
-
-
-## Step 6: Open Your Project
-
-Once connected, you can open a folder on the VM by going to File > Open Folder... and navigating to your desired directory.
-
-### Done! Now you can code in VS Code using your Multipass VM
-
-
-To fix these errors, you need to properly nest the code block inside the first list item.
-
-In Markdown, if a code block is not indented, it breaks the list. This causes the linter to think the list has ended, so when it sees `2.`, it flags it as an error because a "new" list should start with `1.`.
-
-Here is the corrected Markdown:
-
-
-## Opening your Project in the Future
-
-In the future, to open your project in VS Code using the Multipass VM, follow these steps:
-
-1.  Start your Multipass VM if it's not already running: `multipass start primary`
-
-2.  Open VS Code.
-3.  Click the Remote Window icon (green/blue icon in the bottom-left corner of VS Code).
-4.  Select Connect to Host... and choose multipass-local-vm.
-
+1. Start the container: run `./run_docker.sh` from your `ap-env` folder.
+2. Open VS Code.
+3. Press `Cmd+Shift+P` / `Ctrl+Shift+P`, select **Dev Containers: Attach to Running Container...**, and choose the `ap-env` container.
 
 ## Troubleshooting
 
-- If you encounter permission issues, ensure that the `~/.ssh/authorized_keys` file on the VM has the correct permissions:
-
-```bash
-  multipass exec primary -- chmod 600 ~/.ssh/authorized_keys
-```
-
-- If the connection fails, double-check the IP address in your SSH config file and ensure the Multipass VM is running.
-- If you need to restart the Multipass VM, use:
-
-```bash
-  multipass restart primary
-```
-
-## Next Steps
-
-- Add an SSH key from your Multipass VM to GitHub, using [this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-
+- **Container not appearing in the list:** Make sure the container is running (`docker ps` in your local terminal should show it). If it's not, run `./run_docker.sh` from your `ap-env` folder.
+- **Can't find the `/ap` folder:** The `/ap` directory is only populated when the container is running with the volume mount from `run_docker.sh`. Make sure you started the container with that script, not `docker run` directly.
 
 ### Acknowledgements
 
-This guide was written by Amit Aharoni, January 2026
+This guide was written by Amit Aharoni, May 2026
