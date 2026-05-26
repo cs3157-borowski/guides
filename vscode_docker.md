@@ -1,6 +1,7 @@
 # Setting up Docker with VS Code
 
-This guide will walk you through editing your code in Visual Studio Code (VS Code) while running and compiling it inside your Docker container.
+This guide will walk you through editing your code in Visual Studio Code (VS Code) while running and compiling it inside your Docker container. 
+Note: This will **NOT** work on the `BSB` server due to the intensive computing resources VS Code requires.
 
 ## Prerequisites
 
