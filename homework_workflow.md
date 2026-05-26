@@ -6,7 +6,7 @@ This guide walks you through setup, development, and submission for homework ass
 
 ## Overview
 
-![Homework Workflow](assets/HW_Flowchart.png)
+![Homework Workflow](assets/HW_Flowchart_0526.png)
 
 ## First-Time Setup
 
