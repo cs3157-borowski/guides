@@ -5,7 +5,7 @@ This guide walks you through setup, development, and submission for homework ass
 > ⚠️ **Critical:** Your submission is your last Git commit before the deadline. Code that exists only on your local machine or the BSB server will **not** be graded.
 
 ## Overview
-
+![Local &rarr; Remote Dev](assets/Local_Remote_Dev_V0526.png)
 ![Homework Workflow](assets/HW_Flowchart_0526.png)
 
 ## First-Time Setup
