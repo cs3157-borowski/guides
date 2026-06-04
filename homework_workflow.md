@@ -28,10 +28,9 @@ For detailed instructions, see the [SSH Guide](ssh.md).
 
 ### 2. (Optional) Set Up a Local Development Environment
 
-While all work can be done directly on the BSB server, some students prefer a local environment for editing code:
+While all work can be done directly on the BSB server, some students prefer a local environment for editing code.
 
-- **Mac users:** Use [Multipass with VSCode](multipass_vscode.md)
-- **Windows users:** Use VirtualBox with Ubuntu
+Use this [VS Code with Docker Guide](https://github.com/cs3157-borowski/guides/blob/main/vscode_docker.md)
 
 > Note: VSCode cannot be run on the BSB server due to resource constraints.
 
@@ -49,7 +48,7 @@ Replace `X` with the homework number and `N` with your team number.
 
 ### 2. (Optional) Clone to Your Local VM
 
-If you're using Multipass or VirtualBox for local development:
+If you're using Docker for local development:
 
 ```bash
 # On your local VM
@@ -58,11 +57,16 @@ git clone git@github.com:cs3157-borowski-hw/hwX-teamN.git
 
 ## Development Cycle
 
+Before you begin writing any code, start by understanding the problem. 
+1. Outline the Logic - Break the homework problem into parts.
+2. Map the Algorithm - Plan your solution before writing down code; could be in pseudocode or plain English--whatever works for you.
+3. Start writing code - Implement part by part, and test every part individually.
+
 Follow this cycle as you work on your homework:
 
 ### Pull → Code → Commit → Push → Test
 
-**1. Pull latest changes** (especially important for team projects):
+**1. Pull latest changes** (especially important for when working with teammates):
 
 ```bash
 git pull
@@ -162,6 +166,6 @@ git push
 
 _Remember: Only code pushed to GitHub before the deadline will be graded. When in doubt, push your work!_
 
-### Acknowledgements
+### Acknowledgments
 
-This guide was written by Amit Aharoni, February 2026
+This guide has been developed by TA Amit Aharoni in Spring 2026, and updated in Summer 2026.
