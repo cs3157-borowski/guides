@@ -166,7 +166,6 @@ git push
 
 _Remember: Only code pushed to GitHub before the deadline will be graded. When in doubt, push your work!_
 
-This guide has been developed by TA Amit Aharoni in Spring 2026, and updated in Summer 2026.
-### Acknowledgements
+### Acknowledgments
 
-This guide was written by Amit Aharoni, February 2026
+This guide has been developed by TA Amit Aharoni in Spring 2026, and updated in Summer 2026.
